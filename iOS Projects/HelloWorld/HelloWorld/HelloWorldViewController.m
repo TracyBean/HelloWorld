@@ -35,4 +35,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)showMessage
+{
+    UIAlertView *helloWorldAlert = [[UIAlertView alloc]
+                                    initWithTitle:@"People Suck" message:@"They Really Suck" delegate:nil cancelButtonTitle:@"That's Right" otherButtonTitles:nil];
+    // Display the Hello World Message
+    [helloWorldAlert show];
+}
 @end
